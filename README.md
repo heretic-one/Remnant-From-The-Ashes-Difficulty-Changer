@@ -3,8 +3,15 @@
 Remnant: From the Ashes [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS) Lua mod: change the difficulty of your current
 campaign or adventure from the console, without rerolling it.
 
+## Important note
 
-Command
+Back up your saves before using the mod, so you can restore them if anything goes wrong. With the game closed, copy
+the whole `SaveGames` folder somewhere safe; to restore, close the game and copy it back.
+
+- Windows: `%LOCALAPPDATA%\Remnant\Saved\SaveGames`
+- Linux (Steam/Proton): `~/.local/share/Steam/steamapps/compatdata/617290/pfx/drive_c/users/steamuser/AppData/Local/Remnant/Saved/SaveGames`
+
+## Command Usage
 ```
 difficulty <1-4>
 ```
@@ -17,7 +24,7 @@ difficulty <1-4>
 | `3` | Nightmare |
 | `4` | Apocalypse |
 
-Open the console with `~` or F10 (UE4SS console enabler, on by default).
+To open the console press `~` or F10 (UE4SS console enabler, on by default).
 
 ## Install
 
