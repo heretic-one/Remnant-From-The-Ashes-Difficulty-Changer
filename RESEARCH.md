@@ -45,7 +45,7 @@ champion ice orb (> 1), Flickering Horror champion (== 1), Root Throne (3, 4), L
 (`GetDifficultMode(3)`), `Action_Debuff_NightmareRealm` (== 3). UI: `Widget_HUD` icon, `Widget_ServerEntry` (server list),
 `BP_RemnantSaveGame` label, `Widget_CharacterDetails`.
 
-Not affected: vendors (`Character_Merchant_Base` / `Character_Crafter_Base` use the component only for the player
+Probably not affected: vendors (`Character_Merchant_Base` / `Character_Crafter_Base` use the component only for the player
 count), the 52 achievements in `AchievementList`, zone/enemy levels, items, progress.
 
 ## Zone levels (independent of difficulty)

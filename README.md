@@ -3,20 +3,25 @@
 Remnant: From the Ashes [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS) Lua mod: change the difficulty of your current
 campaign or adventure from the console, without rerolling it.
 
-| Command | Effect |
+
+Command
+```
+difficulty <1-4>
+```
+
+| Value | Game mode |
 |---------|--------|
-| `difficulty` | Show the current difficulty |
-| `difficulty 1` | Normal |
-| `difficulty 2` | Hard |
-| `difficulty 3` | Nightmare |
-| `difficulty 4` | Apocalypse |
+| `<empty>` | Show the current difficulty |
+| `1` | Normal |
+| `2` | Hard |
+| `3` | Nightmare |
+| `4` | Apocalypse |
 
 Open the console with `~` or F10 (UE4SS console enabler, on by default).
 
 ## Install
 
-1. Install UE4SS (tested only with the v3.0.1 experimental build; the stable 3.0.1 release frequently crashes the game
-   on startup). Extract it into `Remnant\Binaries\Win64` (the folder with `Remnant-Win64-Shipping.exe`).
+1. Install UE4SS (tested only with [v3.0.1 1176 (Experimental build)](https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1176-g1ba38db4.zip); for me the stable 3.0.1 release frequently crashes the game on startup, so I'd stick with the experimental build).
 2. Extract `DifficultyChanger.zip` into the game folder (Steam > Remnant: From the Ashes > Manage > Browse local files).
    Result: `Remnant\Binaries\Win64\ue4ss\Mods\DifficultyChanger\`.
 
@@ -26,11 +31,11 @@ Delete the `Remnant\Binaries\Win64\ue4ss\Mods\DifficultyChanger` folder. A chang
 
 ## Notes
 
-- Host only. In co-op the host runs the command; other players don't need the mod.
 - Applies immediately and is saved with the campaign at the next save (e.g. travel or quit to menu).
-- Enemies already spawned may keep their old stats until they respawn.
+- Enemies already spawned may keep their old stats until they respawn. I did not test this.
 - Only the difficulty multipliers change (enemy health/damage, spawn count, scrap/XP). Zone and enemy levels,
   items and progress are not touched. See [RESEARCH.md](RESEARCH.md) for details.
+- Claude code was used in the making of this mod.
 
 ## Build
 
